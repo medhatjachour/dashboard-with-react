@@ -2,8 +2,10 @@ import { IoSearchOutline } from "react-icons/io5";
 import { TiArrowSortedDown } from "react-icons/ti";
 import { TiArrowSortedUp } from "react-icons/ti";
 import myImg from "../assets/11635109631.png";
+import { MdMenu } from "react-icons/md";
 import { useState } from "react";
-const Header = () => {
+
+const Header = ({ toggleMenu }: { toggleMenu: Function }) => {
   const [dropOpen, setDropOpen] = useState<boolean>(false)
   const handleDropDown =()=>{
     setDropOpen(!dropOpen )
@@ -11,6 +13,7 @@ const Header = () => {
   return (
     <div className="flex justify-between  relative">
       <div className="flex justify-center items-center gap-9">
+        <MdMenu onClick={toggleMenu} className=" text-2xl block cursor-pointer transition-all  lg:hidden hover:text-[#FF8E29]"/>
         <span className="font-bold text-xl ">Pagination</span>
         <div className="bg-white flex justify-center items-center  rounded-full px-5 py-2">
           <input

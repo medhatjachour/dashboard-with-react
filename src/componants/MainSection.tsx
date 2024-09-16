@@ -1,12 +1,14 @@
 import Header from './Header';
 import Intro from './Intro';
 import CardsSection from './CardsSection';
-const MainSection = () => {
+import ProjectsSection from './ProjectsSection';
+const MainSection = ({ toggleMenu }: { toggleMenu: Function }) => {
   return (
     <div className=''>
-        <Header/>
+        <Header toggleMenu={toggleMenu}/>
         <Intro/>
         <CardsSection/> 
+        <ProjectsSection/>
     </div>
   )
 }

@@ -4,19 +4,19 @@ const convoData = [
   {
         id:1,
         name:"medhat j achour",
-        img:"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Ffree-photos-vectors%2Fportrait-people&psig=AOvVaw16putxlJYXA_PAGPmf77VD&ust=1726518166868000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIC-xsHjxYgDFQAAAAAdAAAAABAE",
+        img:"//images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg",
         status:"Hi i need a help"
     },
    {
         id:2,
         name:"medhat j achour",
-        img:"https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3Dperson&psig=AOvVaw16putxlJYXA_PAGPmf77VD&ust=1726518166868000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIC-xsHjxYgDFQAAAAAdAAAAABAa",
+        img:"//images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg",
         status:"Hi i need a help"
     }
  ]
 const CardsSection = () => {
   return (
-    <div className="grid grid-cols-3 gap-4">
+    <div className="grid grid-cols-3 gap-4 mb-8">
       <div className="col-span-3 md:col-span-1 h-48  rounded-lg shadow-sm bg-white p-3">
         <h2 className="mb-4">Accounts</h2>
         <div className=" pb-6">

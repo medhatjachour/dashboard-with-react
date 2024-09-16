@@ -4,7 +4,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 const Intro = () => {
   return (
-    <div className="mt-10 grid grid-cols-6 gap-4 p-8">
+    <div className="mt-10 grid grid-cols-6 gap-4 p-8 bg-white rounded-xl mb-8 shadow-sm">
       <div className="col-span-6 md:col-span-3  md:border-r border-gray-400">
         <div className=" flex items-start gap-5">
           <img
@@ -23,7 +23,7 @@ const Intro = () => {
           pain avoidance is creating an illusion of equality.
         </p>
       </div>
-      <div className="col-span-6 md:col-span-2 grid grid-cols-4 gap-4 justify-between pb-6">
+      <div className="col-span-6 md:col-span-2 grid grid-cols-4 gap-6 justify-between pb-6">
         <div>
           <h3>Email:</h3>
         </div>

@@ -1,29 +1,29 @@
 
-const NestedList = () => {
-  
-  return (
-    <div>
-      <div className="bg-gray-100 p-4">
-        <ul className="space-y-2">
-          <li className="text-gray-700">
-            Home
-            <ul className="pl-4 space-y-1">
-              <li>Dashboard</li>
-              <li>Analytics</li>
-            </ul>
-          </li>
-          <li className="text-gray-700">
-            Pages
-            <ul className="pl-4 space-y-1">
-              <li>About</li>
-              <li>Contact</li>
-            </ul>
-          </li>
-          {/* Add other nested items */}
-        </ul>
-      </div>
-    </div>
-  );
-};
 
-export default NestedList;
+import Box from '@mui/material/Box';
+import { SimpleTreeView } from '@mui/x-tree-view/SimpleTreeView';
+import { TreeItem } from '@mui/x-tree-view/TreeItem';
+
+export default function NestedList() {
+  return (
+    <Box sx={{ minHeight: 352}}>
+      <SimpleTreeView>
+        <TreeItem itemId="grid" label="Data Grid">
+          <TreeItem itemId="grid-community" label="@mui/x-data-grid" />
+          <TreeItem itemId="grid-pro" label="@mui/x-data-grid-pro" />
+          <TreeItem itemId="grid-premium" label="@mui/x-data-grid-premium" />
+        </TreeItem>
+        <TreeItem itemId="pickers" label="Date and Time Pickers">
+          <TreeItem itemId="pickers-community" label="@mui/x-date-pickers" />
+          <TreeItem itemId="pickers-pro" label="@mui/x-date-pickers-pro" />
+        </TreeItem>
+        <TreeItem itemId="charts" label="Charts">
+          <TreeItem itemId="charts-community" label="@mui/x-charts" />
+        </TreeItem>
+        <TreeItem itemId="tree-view" label="Tree View">
+          <TreeItem itemId="tree-view-community" label="@mui/x-tree-view" />
+        </TreeItem>
+      </SimpleTreeView>
+    </Box>
+  );
+}
