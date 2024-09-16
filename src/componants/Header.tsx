@@ -36,7 +36,7 @@ const Header = ({ toggleMenu }: { toggleMenu: Function }) => {
           </a>
           {dropOpen ?  <TiArrowSortedUp className="text-xl" />:  <TiArrowSortedDown className="text-xl" />}
         </div>
-        <div id="dropDown" className={`absolute bg-white rounded-md shadow-sm w-56  p-3 mt-2 ${!dropOpen?"invisible":"block"}`}>
+        <div id="dropDown" className={`absolute bg-white rounded-md shadow-md w-56  p-3 mt-2 ${!dropOpen?"invisible":"block"}`}>
           <ul>
             <li className="mb-2 py-1 px-2 rounded-md hover:bg-gray-100 cursor-pointer">Profile</li>
               <li className="mb-2  py-1 px-2 rounded-md hover:bg-gray-100 cursor-pointer">Settings</li>

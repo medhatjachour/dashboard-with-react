@@ -1,50 +1,41 @@
-# React + TypeScript + Vite
+# Dashboard with react - Ts - tailwind 
+## Overview
+This is dashboard task with react Ts - tailwind 
+![alt text](https://github.com/medhatjachour/dashboard-with-react/blob/main/samples/1.png?raw=true)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Steps
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/medhatjachour/dashboard-with-react.git
+    cd dashboard-with-react
 
-## Expanding the ESLint configuration
+    ```
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+2. Install the required packages:
+    ```bash
+    npm install
+    ```
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+4. Run the application:
+    ```bash
+    npm run dev
+    ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## ADD To Design 
+1. main thing is the side bar where should it be when  shrinking the screen , obviously it should be toggled so added an icon 
+to handle its functionality as shown 
+![alt text](https://github.com/medhatjachour/dashboard-with-react/blob/main/samples/nav1.png?raw=true)
+![alt text](https://github.com/medhatjachour/dashboard-with-react/blob/main/samples/nav2.png?raw=true)
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+
+2. with header there would an issue with the search input in small screen so it'd be nice to shrink it and 
+also added a drop down menu for account settings
+![alt text](https://github.com/medhatjachour/dashboard-with-react/blob/main/samples/header1.png?raw=true)
+
+# hm that's all in my mind rn ! , and wanted to thank you for letting me enjoy a bit with that task yasta 
+
