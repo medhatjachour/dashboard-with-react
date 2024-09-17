@@ -1,14 +1,12 @@
 import img1 from "../assets/11635109631.png";
-import { FC } from "react";
+type convoType = {
+  id:number
+  name:string
+  img:string
+  Description:string
+}
 
-interface cardInterface {
-  name:string,
-  Description:string,
-  img:string,
-  
-} 
-
-const Card = ({ cardData }:{cardData: FC<cardInterface>}) => {
+const Card = ({ cardData }:{cardData: convoType}) => {
   return (
     <div className="col-span-4 md:col-span-1 rounded-tr-lg rounded-tl-lg ">
       <img
