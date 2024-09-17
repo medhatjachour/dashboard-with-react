@@ -5,7 +5,7 @@ import myImg from "../assets/11635109631.png";
 import { MdMenu } from "react-icons/md";
 import { useState } from "react";
 
-const Header = ({ toggleMenu }: { toggleMenu: Function }) => {
+const Header = ({ toggleMenu }) => {
   const [dropOpen, setDropOpen] = useState<boolean>(false)
   const handleDropDown =()=>{
     setDropOpen(!dropOpen )

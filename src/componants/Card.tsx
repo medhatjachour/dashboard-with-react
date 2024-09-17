@@ -1,6 +1,6 @@
 import img1 from "../assets/11635109631.png";
 
-const Card = ({ cardData }: { cardData: Array }) => {
+const Card = ({ cardData }) => {
   return (
     <div className="col-span-4 md:col-span-1 rounded-tr-lg rounded-tl-lg ">
       <img

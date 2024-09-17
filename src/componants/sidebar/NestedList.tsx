@@ -1,14 +1,11 @@
 
 import * as React from 'react';
 import clsx from 'clsx';
-import { styled, useTheme, alpha } from '@mui/material/styles';
+import { styled, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import CottageIcon from '@mui/icons-material/Cottage';
-import { BsFolder2Open } from "react-icons/bs";
 import { RiAppsFill } from "react-icons/ri";
 import { HiMiniFolderOpen } from "react-icons/hi2";
-import Label from '@mui/icons-material/Label';
 import { BsBasket3Fill } from "react-icons/bs";
 import { FaBell } from "react-icons/fa";
 import { BiSolidMessageRoundedDots } from "react-icons/bi";
@@ -182,27 +179,23 @@ export default function GmailTreeView() {
       }}
       sx={{ flexGrow: 1 }}
     >
-      <CustomTreeItem itemId="1" label="Home" labelIcon={CottageIcon} />
+      <CustomTreeItem itemId="1" label="Home" labelIcon={RiAppsFill} />
       <CustomTreeItem itemId="2" label="Pages" labelIcon={HiMiniFolderOpen} />
       <CustomTreeItem itemId="3" label="Categories" labelIcon={RiAppsFill}>
         <CustomTreeItem
           itemId="5"
-          label="Social"
-      
+          label="Social" labelIcon={FaBell}      
         />
         <CustomTreeItem
           itemId="6"
-          label="Updates"
-          
+          label="Updates" labelIcon={FaBell}          
         />
         <CustomTreeItem
           itemId="7"
-          label="Forums"
-        />
+          label="Forums" labelIcon={FaBell}        />
         <CustomTreeItem
           itemId="8"
-          label="Promotions"
-        />
+          label="Promotions" labelIcon={FaBell}        />
       </CustomTreeItem>
       <CustomTreeItem itemId="4" label="Ecommerce" labelIcon={BsBasket3Fill} />
       <CustomTreeItem itemId="9" label="Notification" labelIcon={FaBell} />
