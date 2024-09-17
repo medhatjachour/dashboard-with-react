@@ -2,9 +2,10 @@ import { GrMail } from "react-icons/gr";
 import { FC } from "react";
 
 interface cardInterface {
-  name:string,
-  status:string,
-  img:string,
+  id:number;
+  img:string;
+  name:string;
+  status:string;
   
 } 
 const ConvoCard = ({ convDetails }:{convDetails: FC<cardInterface>}) => {
@@ -12,7 +13,7 @@ const ConvoCard = ({ convDetails }:{convDetails: FC<cardInterface>}) => {
     <div className=" flex items-center justify-between mb-2">
       <div className=" flex items-center justify-between gap-4">
         <img
-          src={convDetails?.img}
+          src={convDetails.img}
           alt={convDetails.name}
           className=" w-10 h-10 rounded-full "
         />

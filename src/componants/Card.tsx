@@ -2,13 +2,14 @@ import img1 from "../assets/11635109631.png";
 import { FC } from "react";
 
 interface cardInterface {
-  name:string,
-  Description:string,
-  img:string,
+  id:number;
+  name:string;
+  Description:string;
+  img:string;
   
 } 
 
-const Card = ({ cardData }:{cardData: FC<cardInterface>}) => {
+const Card: FC<cardInterface> = ({ cardData }) => {
   return (
     <div className="col-span-4 md:col-span-1 rounded-tr-lg rounded-tl-lg ">
       <img
