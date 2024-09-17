@@ -1,3 +1,5 @@
+import { FC } from "react";
+
 import { IoSearchOutline } from "react-icons/io5";
 import { TiArrowSortedDown } from "react-icons/ti";
 import { TiArrowSortedUp } from "react-icons/ti";
@@ -5,7 +7,11 @@ import myImg from "../assets/11635109631.png";
 import { MdMenu } from "react-icons/md";
 import { useState } from "react";
 
-const Header = ({ toggleMenu }) => {
+interface HeaderInterface {
+  toggleMenu: () => void;
+} 
+
+const Header: FC<HeaderInterface> = ({ toggleMenu }) => {
   const [dropOpen, setDropOpen] = useState<boolean>(false)
   const handleDropDown =()=>{
     setDropOpen(!dropOpen )

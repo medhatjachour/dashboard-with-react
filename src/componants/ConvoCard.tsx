@@ -1,5 +1,13 @@
 import { GrMail } from "react-icons/gr";
-const ConvoCard = ({ convDetails }: { convDetails: Array }) => {
+import { FC } from "react";
+
+interface cardInterface {
+  name:string,
+  status:string,
+  img:string,
+  
+} 
+const ConvoCard = ({ convDetails }:{convDetails: FC<cardInterface>}) => {
   return (
     <div className=" flex items-center justify-between mb-2">
       <div className=" flex items-center justify-between gap-4">
