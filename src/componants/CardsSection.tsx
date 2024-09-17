@@ -1,6 +1,5 @@
 import ToggleBtn from "./ToggleBtn";
 import ConvoCard from "./ConvoCard";
-
 const convoData = [
   {
         id:1,
