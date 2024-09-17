@@ -12,8 +12,8 @@ import { BiSolidMessageRoundedDots } from "react-icons/bi";
 import { SiAuth0 } from "react-icons/si";
 import { IoCalendarSharp } from "react-icons/io5";
 
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+import { MdArrowDropDown } from "react-icons/md";
+import { MdArrowRight } from "react-icons/md";
 import { SvgIconProps } from '@mui/material/SvgIcon';
 import { SimpleTreeView } from '@mui/x-tree-view/SimpleTreeView';
 import {
@@ -173,8 +173,8 @@ export default function GmailTreeView() {
       defaultExpandedItems={['3']}
       defaultSelectedItems="5"
       slots={{
-        expandIcon: ArrowRightIcon,
-        collapseIcon: ArrowDropDownIcon,
+        expandIcon: MdArrowRight,
+        collapseIcon: MdArrowDropDown,
         endIcon: EndIcon,
       }}
       sx={{ flexGrow: 1 }}
